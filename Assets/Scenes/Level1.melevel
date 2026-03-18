@@ -1,0 +1,72 @@
+[SceneConfig]
+BGColor: 0.171569 0.171569 0.171569 1
+[EndSceneConfig]
+
+[Entity]
+Name: Player
+Transform: 4.40933 8.98929 5.7403 | 0 0 0 | 1 1 1
+RigidBody: 1 2 0 0
+Collider: 2 0 0 0 0.2 0.5 0
+SphereCollider: 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/player.lua
+MeshPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Models/sphere.obj
+Mat_Ambient: 1 1 1
+Mat_Diffuse: 1 1 1
+Mat_Shininess: 32
+Tex_Albedo: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/brick.jpg
+Tex_Normal: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/normalMap.jpeg
+Tex_Spec: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/9SliceTableTexture_Specular.png
+[EndEntity]
+
+[Entity]
+Name: Camera
+Transform: 0 3.6 -7.30055 | -88.4136 -21.9498 0 | 1 1 1
+Component: Camera
+Cam_Settings: 60 0.1 2000 1.77778
+Cam_Orientation: -90 0
+Cam_State: 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/cameraFollow.lua
+[EndEntity]
+
+[Entity]
+Name: StartPoint
+Transform: 4.127 1.7671 4.677 | 0 0 0 | 7 2 7
+RigidBody: 1 1 1 0
+Collider: 1 0 -1 0 0.2 0.5 0
+BoxCollider: 1 1 1
+MeshPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Models/cube.obj
+Mat_Ambient: 1 1 1
+Mat_Diffuse: 1 1 1
+Mat_Shininess: 55.306
+Tex_Albedo: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/grass.jpg
+[EndEntity]
+
+[Entity]
+Name: Key
+Transform: -0.536987 4.25507 -90.9789 | 51.4 0 -86.2 | 0.05 0.05 0.05
+RigidBody: 1 1 1 0
+Collider: 1 0 0 0 0.2 0.5 0
+BoxCollider: 31.5 68.4 35.4
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/key.lua
+MeshPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Models/key.obj
+Mat_Ambient: 1 1 1
+Mat_Diffuse: 1 1 1
+Mat_Shininess: 32
+[EndEntity]
+
+[Entity]
+Name: EndPoint
+Transform: 0 0 -93.8243 | 0 0 0 | 7 2 7
+MeshPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Models/cube.obj
+Mat_Ambient: 1 1 1
+Mat_Diffuse: 1 1 1
+Mat_Shininess: 32
+Tex_Albedo: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/brick.jpg
+Tex_Normal: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Images/normalMap.jpeg
+[EndEntity]
+
+[Entity]
+Name: 1
+Transform: 21.3153 0 -24.8836 | 0 0 0 | 1 1 1
+[EndEntity]
+

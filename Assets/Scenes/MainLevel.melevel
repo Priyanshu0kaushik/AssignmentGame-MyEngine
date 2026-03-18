@@ -1,0 +1,123 @@
+[SceneConfig]
+BGColor: 0.156863 0.156863 0.156863 1
+[EndSceneConfig]
+
+[Entity]
+Name: GameTitle
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -202 631 0 1
+UIText: MyGame | 2 1 1 1
+[EndEntity]
+
+[Entity]
+Name: PlayButton
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/PlayButton.lua
+UIBase: -101 143 0 1
+UIButton: 179 92 0.5 0.5 0.5 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: PlayText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -63 168 1 1
+UIText: PLAY | 1 1 1 1
+[EndEntity]
+
+[Entity]
+Name: Level1Button
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level1Button.lua
+UIBase: -594 -81 0 0
+UIButton: 179 92 1 1 1 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: Level1Text
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -568 -55 1 0
+UIText: Level 1 | 1 0.352941 0 1
+[EndEntity]
+
+[Entity]
+Name: Level2Button
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level2Button.lua
+UIBase: -101 -81 0 0
+UIButton: 179 92 1 1 1 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: Level2Text
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -82 -59 1 0
+UIText: Level 2 | 1 0.352941 0 1
+[EndEntity]
+
+[Entity]
+Name: Level3Button
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level3Button.lua
+UIBase: 381 -81 0 0
+UIButton: 179 92 1 0.990196 0.990196 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: Level3Text
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: 402 -57 1 0
+UIText: Level 3 | 1 0.352941 0 1
+[EndEntity]
+
+[Entity]
+Name: QuitButton
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/QuitButton.lua
+UIBase: -99 -201 0 1
+UIButton: 179 92 0.5 0.5 0.5 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: QuitText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -58 -179 0 1
+UIText: QUIT | 1 1 1 1
+[EndEntity]
+
+[Entity]
+Name: LeaderboardButton
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/leaderboard.lua
+UIBase: -160 -21 0 1
+UIButton: 302 93 0.5 0.5 0.5 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: LeaderboardText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -140 0 1 1
+UIText: Leaderboard | 1 1 1 1
+[EndEntity]
+
+[Entity]
+Name: ScoreText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -226 426 1 0
+UIText: --- LEADERBOARD --- | 1 0.823529 0.363322 0.363322
+[EndEntity]
+
+[Entity]
+Name: BackButton
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/backButton.lua
+UIBase: 720 -876 0 0
+UIButton: 153 101 0.5 0.5 0.5 0.7 0.7 0.7
+[EndEntity]
+
+[Entity]
+Name: BackText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: 748 -848 1 0
+UIText: Back | 1 1 1 1
+[EndEntity]
+
