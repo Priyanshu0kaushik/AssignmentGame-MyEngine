@@ -12,7 +12,7 @@ UIText: MyGame | 2 1 1 1
 [Entity]
 Name: PlayButton
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/PlayButton.lua
+ScriptPath: Scripts/PlayButton.lua
 UIBase: -101 143 0 1
 UIButton: 179 92 0.5 0.5 0.5 0.7 0.7 0.7
 [EndEntity]
@@ -27,7 +27,8 @@ UIText: PLAY | 1 1 1 1
 [Entity]
 Name: Level1Button
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level1Button.lua
+ScriptPath: Scripts/LevelButton.lua
+ScriptProp: nextLevelName string Level1
 UIBase: -594 -81 0 0
 UIButton: 179 92 1 1 1 0.7 0.7 0.7
 [EndEntity]
@@ -42,7 +43,8 @@ UIText: Level 1 | 1 0.352941 0 1
 [Entity]
 Name: Level2Button
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level2Button.lua
+ScriptPath: Scripts/LevelButton.lua
+ScriptProp: nextLevelName string Level2
 UIBase: -101 -81 0 0
 UIButton: 179 92 1 1 1 0.7 0.7 0.7
 [EndEntity]
@@ -57,7 +59,8 @@ UIText: Level 2 | 1 0.352941 0 1
 [Entity]
 Name: Level3Button
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/Level3Button.lua
+ScriptPath: Scripts/LevelButton.lua
+ScriptProp: nextLevelName string Level3
 UIBase: 381 -81 0 0
 UIButton: 179 92 1 0.990196 0.990196 0.7 0.7 0.7
 [EndEntity]
@@ -72,7 +75,7 @@ UIText: Level 3 | 1 0.352941 0 1
 [Entity]
 Name: QuitButton
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/QuitButton.lua
+ScriptPath: Scripts/QuitButton.lua
 UIBase: -99 -201 0 1
 UIButton: 179 92 0.5 0.5 0.5 0.7 0.7 0.7
 [EndEntity]
@@ -87,7 +90,7 @@ UIText: QUIT | 1 1 1 1
 [Entity]
 Name: LeaderboardButton
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/leaderboard.lua
+ScriptPath: Scripts/leaderboard.lua
 UIBase: -160 -21 0 1
 UIButton: 302 93 0.5 0.5 0.5 0.7 0.7 0.7
 [EndEntity]
@@ -109,7 +112,7 @@ UIText: --- LEADERBOARD --- | 1 0.823529 0.363322 0.363322
 [Entity]
 Name: BackButton
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-ScriptPath: /Users/priyanshukaushik/MyEngineProjects/AssignmentGame/Assets/Scripts/backButton.lua
+ScriptPath: Scripts/backButton.lua
 UIBase: 720 -876 0 0
 UIButton: 153 101 0.5 0.5 0.5 0.7 0.7 0.7
 [EndEntity]
