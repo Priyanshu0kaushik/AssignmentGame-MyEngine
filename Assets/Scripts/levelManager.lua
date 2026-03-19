@@ -16,6 +16,10 @@ function AddKey()
     if keysCollected >= totalKeys then
         print("All keys collected! Loading Next Level.")
         if LastLevel > 0 then
+            local finalTime = StopPlayTimer();
+
+            local scoreData = string.format("%.2f", finalTime) .. ","
+            AppendFile("scores.txt", scoreData)
             LoadScene("Scenes/MainLevel.melevel")
         else
             local scenePath = "Scenes/" .. nextLevelName .. ".melevel"

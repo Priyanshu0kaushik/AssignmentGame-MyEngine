@@ -1,9 +1,13 @@
-nextLevelName = "Level2"
-
 InspectorVariables = {
-    { name = "nextLevelName", type = "string", value = "Level2" }
+    { name = "LevelName", type = "string", value = "Level2" }
 }
 function OnButtonClicked()
-    local scenePath = "Scenes/" .. nextLevelName .. ".melevel"
+    local currentLevel = LevelName
+
+    local scenePath = "Scenes/" .. currentLevel .. ".melevel"
+    print("Loading " .. currentLevel);
+    if currentLevel == "Level1" then
+        StartPlayTimer();
+    end
     LoadScene(scenePath)
 end

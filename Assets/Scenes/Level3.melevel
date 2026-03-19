@@ -138,3 +138,17 @@ Mat_Diffuse: 1 1 1
 Mat_Shininess: 32
 [EndEntity]
 
+Entity]
+Name: TimerText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: 800 940 0 1
+UIText: Time | 1 1 1 1
+[EndEntity]
+
+[Entity]
+Name: Timer
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+ScriptPath: Scripts/timer.lua
+UIBase: 922 935 0 1
+UIText: 0 | 1 1 1 1
+[EndEntity]

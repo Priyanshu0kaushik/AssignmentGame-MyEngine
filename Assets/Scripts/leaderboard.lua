@@ -8,6 +8,9 @@ function OnCreate(entityID)
 end
 
 function OnButtonClicked()
+    if scoreTextId == nil or scoreTextId == 0 or scoreTextId == 4294967295 then
+        scoreTextId = FindEntityByName("ScoreText")
+    end
     local playBtn = FindEntityByName("PlayButton")
     local quitBtn = FindEntityByName("QuitButton")
     local backBtn = FindEntityByName("BackButton")
