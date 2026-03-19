@@ -60,7 +60,7 @@ function OnUpdate(entityID, dt)
 
     -- Jump
     if IsKeyPressed(32) and canJump and jumpCooldown <= 0 then
-        rb:AddForce(vec3.new(0, jumpForce, 0))
+        rb:AddImpulse(vec3.new(0, jumpForce, 0))
         canJump = false
         jumpCooldown = 0.3
     end

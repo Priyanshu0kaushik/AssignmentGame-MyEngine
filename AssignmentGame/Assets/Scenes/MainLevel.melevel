@@ -44,7 +44,7 @@ UIText: Level 1 | 1 0.352941 0 1
 Name: Level2Button
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/LevelButton.lua
-ScriptProp: LevelName string Level1
+ScriptProp: LevelName string Level2
 UIBase: -101 -81 0 0
 UIButton: 179 92 1 1 1 0.7 0.7 0.7
 [EndEntity]
@@ -60,7 +60,7 @@ UIText: Level 2 | 1 0.352941 0 1
 Name: Level3Button
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/LevelButton.lua
-ScriptProp: LevelName string Level1
+ScriptProp: LevelName string Level3
 UIBase: 381 -81 0 0
 UIButton: 179 92 1 0.990196 0.990196 0.7 0.7 0.7
 [EndEntity]

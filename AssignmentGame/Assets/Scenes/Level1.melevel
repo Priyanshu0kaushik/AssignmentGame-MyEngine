@@ -11,7 +11,7 @@ SphereCollider: 1
 ScriptPath: Scripts/player.lua
 ScriptProp: speed int 60
 ScriptProp: turnSpeed int 120
-ScriptProp: jumpForce int 3000
+ScriptProp: jumpForce int 21
 ScriptProp: maxSpeed int 20
 ScriptProp: groundFriction int 50
 ScriptProp: airFriction int 50
