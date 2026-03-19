@@ -4,8 +4,8 @@ BGColor: 0.171569 0.171569 0.171569 1
 
 [Entity]
 Name: Player
-Transform: 4.40933 8.98929 5.7403 | 0 0 0 | 1 1 1
-RigidBody: 1 2 0 0
+Transform: 4.40933 4.76735 5.7403 | 0 -59.2969 0 | 1 1 1
+RigidBody: 1 1 0 0
 Collider: 2 0 0 0 0.2 0.5 0
 SphereCollider: 1
 ScriptPath: Scripts/player.lua
@@ -20,12 +20,16 @@ Tex_Spec: Images/9SliceTableTexture_Specular.png
 
 [Entity]
 Name: Camera
-Transform: 0 3.6 -7.30055 | -88.4136 -21.9498 0 | 1 1 1
+Transform: -1.41787 5.55907 15.5532 | 18 -59.2969 0 | 1 1 1
 Component: Camera
 Cam_Settings: 60 0.1 2000 1.77778
 Cam_Orientation: -90 0
 Cam_State: 1
 ScriptPath: Scripts/cameraFollow.lua
+ScriptProp: armLength int 12
+ScriptProp: heightOffset int 4
+ScriptProp: smoothness int 10
+ScriptProp: pitchOffset int -11
 [EndEntity]
 
 [Entity]
@@ -86,11 +90,11 @@ Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/levelManager.lua
 ScriptProp: totalKeys int 2
 ScriptProp: LastLevel int 1
-ScriptProp: nextLevelName string Level2
+ScriptProp: nextLevelName string MainLevel
 [EndEntity]
 
 [Entity]
-Name: Block_1
+Name: Block1
 Transform: -9.80895 0 -48.4132 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
@@ -102,7 +106,7 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: Block_2
+Name: Block2
 Transform: 31.4775 0 -86.1412 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
@@ -114,7 +118,7 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: Block_3
+Name: Block3
 Transform: -36.0139 -4.29461 -73.1165 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
@@ -123,6 +127,13 @@ MeshPath: Models/cube.obj
 Mat_Ambient: 1 1 1
 Mat_Diffuse: 1 1 1
 Mat_Shininess: 32
+[EndEntity]
+
+[Entity]
+Name: TimerText
+Transform: -37.0469 -0.778764 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
+UIBase: 800 940 0 1
+UIText: Time | 1 1 1 1
 [EndEntity]
 
 [Entity]
@@ -138,17 +149,28 @@ Mat_Diffuse: 1 1 1
 Mat_Shininess: 32
 [EndEntity]
 
-Entity]
-Name: TimerText
-Transform: 0 0 0 | 0 0 0 | 1 1 1
-UIBase: 800 940 0 1
-UIText: Time | 1 1 1 1
-[EndEntity]
-
 [Entity]
 Name: Timer
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/timer.lua
 UIBase: 922 935 0 1
-UIText: 0 | 1 1 1 1
+UIText: 0.00 | 1 1 1 1
 [EndEntity]
+
+[Entity]
+Name: Enemy
+Transform: -10.4779 7.041 -47.4124 | 0 0 0 | 2 2 1
+RigidBody: 1 1 0 1
+Collider: 2 0 0 0 0.2 0.5 1
+SphereCollider: 4.4
+ScriptPath: Scripts/enemy.lua
+ScriptProp: speed int 10
+ScriptProp: yOffset int 4
+ScriptProp: startEntityName string Block1
+ScriptProp: endEntityName string Block2
+MeshPath: Models/sphere.obj
+Mat_Ambient: 0 0 0
+Mat_Diffuse: 1 0 0
+Mat_Shininess: 32
+[EndEntity]
+

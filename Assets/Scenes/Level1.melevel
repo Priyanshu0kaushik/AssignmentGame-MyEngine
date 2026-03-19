@@ -20,12 +20,16 @@ Tex_Spec: Images/9SliceTableTexture_Specular.png
 
 [Entity]
 Name: Camera
-Transform: 0 3.6 -7.30055 | -88.4136 -21.9498 0 | 1 1 1
+Transform: -1.41787 5.55907 15.5532 | 18 -59.2969 0 | 1 1 1
 Component: Camera
 Cam_Settings: 60 0.1 2000 1.77778
 Cam_Orientation: -90 0
 Cam_State: 1
 ScriptPath: Scripts/cameraFollow.lua
+ScriptProp: armLength int 12
+ScriptProp: heightOffset int 4
+ScriptProp: smoothness int 10
+ScriptProp: pitchOffset int -11
 [EndEntity]
 
 [Entity]
@@ -45,8 +49,8 @@ Tex_Albedo: Images/grass.jpg
 Name: Key
 Transform: -0.536987 4.25507 -119.027 | 0 90 0 | 0.05 0.05 0.05
 RigidBody: 1 1 1 0
-Collider: 1 0 0 0 0.2 0.5 1
-BoxCollider: 31.5 68.4 35.4
+Collider: 1 0 4.9 0 0.2 0.5 1
+BoxCollider: 19.1 63 20.9
 ScriptPath: Scripts/key.lua
 MeshPath: Models/key.obj
 Mat_Ambient: 1 1 1
@@ -130,7 +134,7 @@ Name: Key_1
 Transform: -37.0469 -0.778764 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 1
-BoxCollider: 31.5 68.4 35.4
+BoxCollider: 19 63 20
 ScriptPath: Scripts/key.lua
 MeshPath: Models/key.obj
 Mat_Ambient: 1 1 1

@@ -4,7 +4,7 @@ BGColor: 0.367647 0.367647 0.367647 1
 
 [Entity]
 Name: Player
-Transform: 7.78297 8.98929 5.7403 | 0 0 0 | 1 1 1
+Transform: 7.78297 15.1178 3.88941 | 0 0 0 | 1 1 1
 RigidBody: 1 2 0 0
 Collider: 2 0 0 0 0.2 0.5 0
 SphereCollider: 1
@@ -20,7 +20,7 @@ Tex_Spec: Images/9SliceTableTexture_Specular.png
 
 [Entity]
 Name: StartPoint
-Transform: 4.127 1.7671 4.677 | 0 0 0 | 7 2 7
+Transform: 4.127 9.9756 4.677 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
 BoxCollider: 1 1 1
@@ -42,12 +42,16 @@ ScriptProp: nextLevelName string Level3
 
 [Entity]
 Name: Camera
-Transform: 0 3.6 -7.30055 | -88.4136 -21.9498 0 | 1 1 1
+Transform: -1.41787 5.55907 15.5532 | 18 -59.2969 0 | 1 1 1
 Component: Camera
 Cam_Settings: 60 0.1 2000 1.77778
 Cam_Orientation: -90 0
 Cam_State: 1
 ScriptPath: Scripts/cameraFollow.lua
+ScriptProp: armLength int 12
+ScriptProp: heightOffset int 4
+ScriptProp: smoothness int 10
+ScriptProp: pitchOffset int -11
 [EndEntity]
 
 [Entity]
@@ -77,14 +81,9 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: Terrain
-Transform: 0 0 0 | 0 0 0 | 1 1 1
-HeightmapPath: Images/Heightmap.png 2 20 Images/grass.jpg
-[EndEntity]
-
-Entity]
 Name: TimerText
 Transform: 0 0 0 | 0 0 0 | 1 1 1
+HeightmapPath: Images/Heightmap.png 2 20 Images/grass.jpg
 UIBase: 800 940 0 1
 UIText: Time | 1 1 1 1
 [EndEntity]
@@ -96,3 +95,4 @@ ScriptPath: Scripts/timer.lua
 UIBase: 922 935 0 1
 UIText: 0 | 1 1 1 1
 [EndEntity]
+
