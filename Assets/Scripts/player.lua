@@ -67,7 +67,7 @@ function OnUpdate(entityID, dt)
 
     -- Respawn
     local pos = trans.position
-    if pos.y < -50 then
+    if pos.y < -20 then
         isRespawning = true
         Respawn(entityID)
     end

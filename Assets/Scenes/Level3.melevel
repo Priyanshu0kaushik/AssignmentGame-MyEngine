@@ -4,11 +4,17 @@ BGColor: 0.171569 0.171569 0.171569 1
 
 [Entity]
 Name: Player
-Transform: 4.40933 4.76735 5.7403 | 0 -59.2969 0 | 1 1 1
-RigidBody: 1 1 0 0
+Transform: 4.40933 8.98929 5.7403 | 0 0 0 | 1 1 1
+RigidBody: 1 2 0 0
 Collider: 2 0 0 0 0.2 0.5 0
 SphereCollider: 1
 ScriptPath: Scripts/player.lua
+ScriptProp: speed int 60
+ScriptProp: turnSpeed int 120
+ScriptProp: jumpForce int 3000
+ScriptProp: maxSpeed int 20
+ScriptProp: groundFriction int 50
+ScriptProp: airFriction int 50
 MeshPath: Models/sphere.obj
 Mat_Ambient: 1 1 1
 Mat_Diffuse: 1 1 1
@@ -107,7 +113,7 @@ Mat_Shininess: 32
 
 [Entity]
 Name: Block2
-Transform: 31.4775 0 -86.1412 | 0 0 0 | 7 2 7
+Transform: 13.8938 0 -79.0245 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
 BoxCollider: 1 1 1
@@ -130,13 +136,6 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: TimerText
-Transform: -37.0469 -0.778764 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
-UIBase: 800 940 0 1
-UIText: Time | 1 1 1 1
-[EndEntity]
-
-[Entity]
 Name: Key_1
 Transform: -37.0469 -0.778764 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
 RigidBody: 1 1 1 0
@@ -150,27 +149,77 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
+Name: TimerText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -128 940 0 1
+UIText: Time | 1 1 1 1
+[EndEntity]
+
+[Entity]
 Name: Timer
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/timer.lua
-UIBase: 922 935 0 1
-UIText: 0.00 | 1 1 1 1
+UIBase: -10 938 0 1
+UIText: 00.00 | 1 1 1 1
 [EndEntity]
 
 [Entity]
 Name: Enemy
-Transform: -10.4779 7.041 -47.4124 | 0 0 0 | 2 2 1
+Transform: -27.5102 7.041 -64.0389 | 0 0 0 | 2 2 1
 RigidBody: 1 1 0 1
 Collider: 2 0 0 0 0.2 0.5 1
 SphereCollider: 4.4
 ScriptPath: Scripts/enemy.lua
 ScriptProp: speed int 10
 ScriptProp: yOffset int 4
-ScriptProp: startEntityName string Block1
+ScriptProp: startEntityName string Block3
 ScriptProp: endEntityName string Block2
 MeshPath: Models/sphere.obj
 Mat_Ambient: 0 0 0
 Mat_Diffuse: 1 0 0
 Mat_Shininess: 32
+[EndEntity]
+
+[Entity]
+Name: EndBlockLight
+Transform: -2.36044 9.30619 -121.227 | 0 0 0 | 7 2 7
+Light: 1 0.423529 0.384314 0.709804 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: Block3Light
+Transform: -36.0139 7.31303 -73.1165 | 0 0 0 | 7 2 7
+Light: 1 0.421798 0.383266 0.710784 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: Block2Light
+Transform: 14.0094 11.9515 -78.9652 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: Block1Light
+Transform: -9.80895 10.8261 -48.4132 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: BlockLight
+Transform: 31.4775 6.89758 -28.5003 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: StartPointLight
+Transform: 4.127 11.6078 4.677 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: InstructionsUI
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -1001 822 0 1
+UIText: #Collect Keys, Avoid Enemy, Win | 0.7 1 0.392157 0.392157
 [EndEntity]
 

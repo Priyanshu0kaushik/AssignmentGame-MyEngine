@@ -4,11 +4,17 @@ BGColor: 0.171569 0.171569 0.171569 1
 
 [Entity]
 Name: Player
-Transform: 4.40933 8.98929 5.7403 | 0 0 0 | 1 1 1
+Transform: 3.67709 8.98929 5.7403 | 0 0 0 | 1 1 1
 RigidBody: 1 2 0 0
 Collider: 2 0 0 0 0.2 0.5 0
 SphereCollider: 1
 ScriptPath: Scripts/player.lua
+ScriptProp: speed int 60
+ScriptProp: turnSpeed int 120
+ScriptProp: jumpForce int 3000
+ScriptProp: maxSpeed int 20
+ScriptProp: groundFriction int 50
+ScriptProp: airFriction int 50
 MeshPath: Models/sphere.obj
 Mat_Ambient: 1 1 1
 Mat_Diffuse: 1 1 1
@@ -47,7 +53,7 @@ Tex_Albedo: Images/grass.jpg
 
 [Entity]
 Name: Key
-Transform: -0.536987 4.25507 -119.027 | 0 90 0 | 0.05 0.05 0.05
+Transform: -0.536987 4.25507 -120.554 | 0 90 0 | 0.05 0.05 0.05
 RigidBody: 1 1 1 0
 Collider: 1 0 4.9 0 0.2 0.5 1
 BoxCollider: 19.1 63 20.9
@@ -94,7 +100,7 @@ ScriptProp: nextLevelName string Level2
 [EndEntity]
 
 [Entity]
-Name: Block_1
+Name: Block1
 Transform: -9.80895 0 -48.4132 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
@@ -106,8 +112,8 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: Block_2
-Transform: 31.4775 0 -86.1412 | 0 0 0 | 7 2 7
+Name: Block2
+Transform: 13.2966 0 -79.278 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
 BoxCollider: 1 1 1
@@ -118,8 +124,8 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: Block_3
-Transform: -36.0139 -4.29461 -73.1165 | 0 0 0 | 7 2 7
+Name: Block3
+Transform: -36.0139 -2.59273 -73.1165 | 0 0 0 | 7 2 7
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 0
 BoxCollider: 1 1 1
@@ -131,7 +137,7 @@ Mat_Shininess: 32
 
 [Entity]
 Name: Key_1
-Transform: -37.0469 -0.778764 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
+Transform: -37.0469 1.18215 -73.2869 | 51.4 0 -86.2 | 0.05 0.05 0.05
 RigidBody: 1 1 1 0
 Collider: 1 0 0 0 0.2 0.5 1
 BoxCollider: 19 63 20
@@ -145,7 +151,7 @@ Mat_Shininess: 32
 [Entity]
 Name: TimerText
 Transform: 0 0 0 | 0 0 0 | 1 1 1
-UIBase: 800 940 0 1
+UIBase: -128 940 0 1
 UIText: Time | 1 1 1 1
 [EndEntity]
 
@@ -153,7 +159,50 @@ UIText: Time | 1 1 1 1
 Name: Timer
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/timer.lua
-UIBase: 922 935 0 1
-UIText: 0 | 1 1 1 1
+UIBase: -10 938 0 1
+UIText: 00.00 | 1 1 1 1
+[EndEntity]
+
+[Entity]
+Name: Block3Light
+Transform: -36.0139 7.31303 -73.1165 | 0 0 0 | 7 2 7
+Light: 1 0.421798 0.383266 0.710784 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: EndBlockLight
+Transform: -2.36044 9.30619 -121.227 | 0 0 0 | 7 2 7
+Light: 1 0.423529 0.384314 0.709804 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: Block2Light
+Transform: 14.0094 11.9515 -78.9652 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: Block1Light
+Transform: -9.80895 6.01214 -48.4132 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: BlockLight
+Transform: 31.4775 6.05192 -28.5003 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: StartPointLight
+Transform: 4.127 12.2836 4.677 | 0 0 0 | 7 2 7
+Light: 1 1 1 1 6.5 1 0.09 0.032
+[EndEntity]
+
+[Entity]
+Name: InstructionsUI
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -1001 822 0 1
+UIText: #Collect Both Keys To Go To Next Level | 0.7 1 0.392157 0.392157
 [EndEntity]
 

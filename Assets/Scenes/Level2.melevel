@@ -4,11 +4,17 @@ BGColor: 0.367647 0.367647 0.367647 1
 
 [Entity]
 Name: Player
-Transform: 7.78297 15.1178 3.88941 | 0 0 0 | 1 1 1
+Transform: 4.40933 8.98929 5.7403 | 0 0 0 | 1 1 1
 RigidBody: 1 2 0 0
 Collider: 2 0 0 0 0.2 0.5 0
 SphereCollider: 1
 ScriptPath: Scripts/player.lua
+ScriptProp: speed int 60
+ScriptProp: turnSpeed int 120
+ScriptProp: jumpForce int 3000
+ScriptProp: maxSpeed int 20
+ScriptProp: groundFriction int 50
+ScriptProp: airFriction int 50
 MeshPath: Models/sphere.obj
 Mat_Ambient: 1 1 1
 Mat_Diffuse: 1 1 1
@@ -81,10 +87,15 @@ Mat_Shininess: 32
 [EndEntity]
 
 [Entity]
-Name: TimerText
+Name: Terrain
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 HeightmapPath: Images/Heightmap.png 2 20 Images/grass.jpg
-UIBase: 800 940 0 1
+[EndEntity]
+
+[Entity]
+Name: TimerText
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -128 940 0 1
 UIText: Time | 1 1 1 1
 [EndEntity]
 
@@ -92,7 +103,13 @@ UIText: Time | 1 1 1 1
 Name: Timer
 Transform: 0 0 0 | 0 0 0 | 1 1 1
 ScriptPath: Scripts/timer.lua
-UIBase: 922 935 0 1
-UIText: 0 | 1 1 1 1
+UIBase: -10 938 0 1
+UIText: 00.00 | 1 1 1 1
 [EndEntity]
 
+[Entity]
+Name: InstructionsUI
+Transform: 0 0 0 | 0 0 0 | 1 1 1
+UIBase: -1001 822 0 1
+UIText: #Find 2 Key In the Terrain | 0.7 1 0.392157 0.392157
+[EndEntity]
