@@ -1,13 +1,19 @@
 # Game Build Instruction
 
 ## Setting Up Engine
-### For Windows:
-* Download https://github.com/Priyanshu0kaushik/MyEngineGameEngine repo.
-* #### Ensure you have CMake and Visual Studio (MSVC) installed on your system.
-* After downloading it, navigate to the MyEngine Folder having CMakeLists.txt file. 
-* Make a new folder named “build” and then open it from the terminal/cmd.
-* Run “cmake ..” command.
-* Then, Run "cmake --build . --config Debug" command.
+### Prerequisites
+* CMake 3.15+
+* C++17 compiler (Clang / GCC / MSVC)
+
+### Steps
+```bash
+git clone https://github.com/yourusername/MyEngine.git
+cd MyEngine
+mkdir build && cd build
+cmake ..
+cmake --build . --config Debug
+```
+  
 * Now, Go to the MyEngine/build/Debug folder and run MyEngine.exe
 
 ## Setting Up Game
